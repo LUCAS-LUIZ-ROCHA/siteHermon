@@ -1,0 +1,155 @@
+/* Hermon - PALETA OFICIAL Verde Musgo + Bege [file:115] */
+:root {
+    --primary: #24352D;     /* Verde Musgo Principal */
+    --secondary: #BDBDB1;   /* Bege Secundária */
+    --accent: #F4E574;      /* Amarelo Destaque */
+    --dark: #1A1A1A;        /* Texto/Fundo Escuro */
+    --light: #F8F9FA;       /* Fundo Claro */
+    --white: #FFFFFF;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;500;700&display=swap');
+
+* { font-family: 'Cinzel', serif; margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Navbar - Verde Musgo Transparente */
+.navbar {
+    background: rgba(36, 53, 45, 0.95) !important;  /* --primary */
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(244, 229, 116, 0.3);
+    transition: all 0.4s ease;
+}
+
+.navbar.scrolled {
+    background: rgba(36, 53, 45, 0.98) !important;
+    box-shadow: 0 8px 32px rgba(36, 53, 45, 0.4);
+}
+
+.navbar-brand img {
+    height: 60px;
+    width: auto;
+    filter: drop-shadow(0 4px 12px rgba(244, 229, 116, 0.5));
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img { transform: scale(1.05); }
+
+/* Links - Linha Amarela */
+.nav-link {
+    color: #FFFFFF !important;
+    font-weight: 500;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -8px;
+    left: 50%;
+    background: #F4E574;
+    transition: all 0.4s ease;
+    border-radius: 2px;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after { width: 100%; left: 0; }
+
+/* Hero - Gradiente Verde Musgo */
+.hero {
+    background: linear-gradient(135deg, #24352D 0%, rgba(36, 53, 45, 0.8) 100%) !important;
+    min-height: 100vh;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top left, rgba(244,229,116,0.15) 0%, transparent 60%);
+}
+
+/* Portfolio - Fundo Bege Secundária */
+#portfolio { 
+    background: linear-gradient(to bottom, #BDBDB1, #F8F9FA) !important; 
+}
+
+/* Cards Portfolio - Bege Transparente */
+.portfolio-card {
+    background: rgba(255,255,255,0.9);
+    border: 2px solid rgba(36, 53, 45, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 20px 40px rgba(36, 53, 45, 0.15);
+}
+
+/* Serviços - Fundo Limpo */
+#servicos { background: #F8F9FA !important; }
+
+/* Cards Serviços - Borda Verde Musgo */
+.service-card {
+    border-top: 6px solid #24352D !important;
+    background: #FFFFFF;
+    box-shadow: 0 15px 40px rgba(36, 53, 45, 0.12);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.service-card:hover {
+    border-top-color: #F4E574 !important;
+    box-shadow: 0 25px 60px rgba(36, 53, 45, 0.2);
+}
+
+.service-card .card-title {
+    color: #24352D !important;
+    font-weight: 700;
+}
+
+/* Botões WhatsApp - Verde Musgo + Amarelo Glow */
+.btn-whatsapp {
+    background: linear-gradient(135deg, #24352D, #1A1A1A);
+    border: 2px solid #24352D;
+    color: white;
+    border-radius: 50px;
+    padding: 14px 32px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 8px 25px rgba(244, 229, 116, 0.4);
+    transition: all 0.4s ease;
+}
+
+.btn-whatsapp:hover {
+    background: linear-gradient(135deg, #F4E574, #E8D366);
+    color: #24352D !important;
+    border-color: #F4E574;
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(244, 229, 116, 0.6);
+}
+
+/* Contato - Gradiente Verde Musgo + Bege */
+#contato {
+    background: linear-gradient(135deg, #24352D 0%, #BDBDB1 50%, rgba(189,189,177,0.8) 100%) !important;
+    color: #24352D;
+}
+
+/* Títulos - Verde Musgo */
+.section-title, .card-title {
+    color: #24352D !important;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(244, 229, 116, 0.3);
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-up { animation: fadeInUp 1s ease forwards; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-brand img { height: 45px; }
+    .nav-link { margin: 0 10px; font-size: 0.95rem; }
+    .btn-whatsapp { padding: 12px 25px; font-size: 1rem; }
+}
