@@ -32,14 +32,29 @@
         </div>
     </nav>
 
-    <!-- Hero/Home -->
-    <section id="home" class="hero text-white text-center">
-        <div class="container fade-in-up">
-            <h1 class="display-3 fw-bold mb-4">Hermon</h1>
-            <p class="lead fs-4 mb-5">Regularização Imobiliária com Expertise e Agilidade</p>
-            <a href="#servicos" class="btn btn-light btn-lg px-5 py-3">Conheça Nossos Serviços</a>
-        </div>
-    </section>
+    <!-- Hero/Home com Imagem Prédios -->
+<section id="home" class="hero position-relative overflow-hidden">
+    <!-- Background Imagem Prédios -->
+    <div class="hero-bg"></div>
+    
+    <!-- Overlay Escuro para legibilidade -->
+    <div class="hero-overlay"></div>
+    
+    <!-- Conteúdo Centralizado - DESCIDO -->
+    <div class="container position-relative z-index-2 fade-in-up text-center py-5" style="padding-top: 25vh !important;">
+        <h1 class="display-2 fw-bold mb-5" style="color: var(--accent); text-shadow: 0 4px 20px rgba(0,0,0,0.7);">
+            HERMON
+        </h1>
+        <p class="lead fs-3 mb-5 px-4" style="color: white; font-weight: 400; max-width: 700px; margin: 0 auto; text-shadow: 0 2px 10px rgba(0,0,0,0.8);">
+            Regularização Imobiliária com Expertise e Agilidade
+        </p>
+        <a href="#servicos" class="btn btn-whatsapp btn-lg px-5 py-3 fs-5" style="box-shadow: 0 15px 40px rgba(244,229,116,0.6) !important;">
+            <i class="fab fa-whatsapp me-2"></i>Conheça Nossos Serviços
+        </a>
+    </div>
+</section>
+
+    
 
     <!-- Portfolio Carrossel -->
     <section id="portfolio" class="py-5 bg-light">
@@ -85,74 +100,81 @@
         </div>
     </section>
 
-    <!-- Serviços 3x2 Grid -->
-    <section id="servicos" class="py-5 bg-white">
-        <div class="container">
-            <h2 class="text-center section-title mb-5 fw-bold" style="color: var(--primary);">Nossos Serviços</h2>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card service-card h-100">
-                        <img src="https://via.placeholder.com/400x250/68B346/white?text=Usucapião" class="card-img-top" alt="Usucapião">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold mb-3" style="color: var(--primary);">Usucapião</h5>
-                            <p class="card-text">Regularize seu imóvel por posse com documentação completa e aprovação judicial.</p>
-                            <a href="https://wa.me/5511978862935?text=Olá, desejo mais informações sobre Usucapião" class="btn btn-whatsapp" target="_blank">Contrate</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card service-card h-100">
-                        <img src="https://via.placeholder.com/400x250/0E5C36/white?text=Desmembramento" class="card-img-top" alt="Desmembramento">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold mb-3" style="color: var(--primary);">Desmembramento</h5>
-                            <p class="card-text">Divida seu terreno em lotes com aprovação municipal e registro em cartório.</p>
-                            <a href="https://wa.me/5511978862935?text=Olá, desejo mais informações sobre Desmembramento" class="btn btn-whatsapp" target="_blank">Contrate</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card service-card h-100">
-                        <img src="https://via.placeholder.com/400x250/F4E574/036E1D?text=Topografia" class="card-img-top" alt="Topografia">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold mb-3" style="color: var(--primary);">Topografia</h5>
-                            <p class="card-text">Levantamentos precisos para regularização e aprovação de projetos.</p>
-                            <a href="https://wa.me/5511978862935?text=Olá, desejo mais informações sobre Topografia" class="btn btn-whatsapp" target="_blank">Contrate</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card service-card h-100">
-                        <img src="https://via.placeholder.com/400x250/A8D5A2/var(--primary)?text=Certidões" class="card-img-top" alt="Certidões">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold mb-3" style="color: var(--primary);">Certidões</h5>
-                            <p class="card-text">Obtenção completa de certidões negativas para legalização imobiliária.</p>
-                            <a href="https://wa.me/5511978862935?text=Olá, desejo mais informações sobre Certidões" class="btn btn-whatsapp" target="_blank">Contrate</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card service-card h-100">
-                        <img src="https://via.placeholder.com/400x250/036E1D/white?text=Retificação" class="card-img-top" alt="Retificação">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold mb-3" style="color: var(--primary);">Retificação</h5>
-                            <p class="card-text">Correção de matrícula e área para regularização definitiva.</p>
-                            <a href="https://wa.me/5511978862935?text=Olá, desejo mais informações sobre Retificação" class="btn btn-whatsapp" target="_blank">Contrate</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card service-card h-100">
-                        <img src="https://via.placeholder.com/400x250/var(--primary)/F4E574?text=Análise" class="card-img-top" alt="Análise">
-                        <div class="card-body text-center p-4">
-                            <h5 class="card-title fw-bold mb-3" style="color: var(--primary);">Análise Documental</h5>
-                            <p class="card-text">Diagnóstico completo de pendências documentais do seu imóvel.</p>
-                            <a href="https://wa.me/5511978862935?text=Olá, desejo mais informações sobre Análise Documental" class="btn btn-whatsapp" target="_blank">Contrate</a>
-                        </div>
-                    </div>
-                </div>
+   <!-- Serviços 3x2 Grid com Imagens Locais -->
+<div class="row g-4">
+    <!-- Serviço 1: Usucapião -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card service-card h-100">
+            <img src="{{ url_for('static', filename='img/usuc.jpg') }}" class="card-img-top" alt="Usucapião">
+            <div class="card-body text-center p-4">
+                <h5 class="card-title fw-bold mb-3" style="color: var(--primary);">Usucapião</h5>
+                <p class="card-text">Regularize seu imóvel por posse com documentação completa e aprovação judicial.</p>
+                <a href="https://wa.me/5511978862935?text=Olá, desejo mais informações sobre Usucapião" class="btn btn-whatsapp" target="_blank">Contrate</a>
             </div>
         </div>
-    </section>
+    </div>
+
+    <!-- Serviço 2: Desmembramento -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card service-card h-100">
+            <img src="{{ url_for('static', filename='img/desm.jpeg') }}" class="card-img-top" alt="Desmembramento">
+            <div class="card-body text-center p-4">
+                <h5 class="card-title fw-bold mb-3" style="color: var(--primary);">Desmembramento</h5>
+                <p class="card-text">Divida seu terreno em lotes com aprovação municipal e registro em cartório.</p>
+                <a href="https://wa.me/5511978862935?text=Olá, desejo mais informações sobre Desmembramento" class="btn btn-whatsapp" target="_blank">Contrate</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Serviço 3: Loteamentos Projetos e Reg -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card service-card h-100">
+            <img src="{{ url_for('static', filename='img/projlo.jpeg') }}" class="card-img-top" alt="Topografia">
+            <div class="card-body text-center p-4">
+                <h5 class="card-title fw-bold mb-3" style="color: var(--primary);">Projetos para loteamento</h5>
+                <p class="card-text">Fazemos a análise completa para transformar sua gleba em lotes regularizados.</p>
+                <a href="https://wa.me/5511978862935?text=Olá, desejo mais informações sobre Topografia" class="btn btn-whatsapp" target="_blank">Contrate</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Serviço 4: Certidões -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card service-card h-100">
+            <img src="{{ url_for('static', filename='img/cert.jpeg') }}" class="card-img-top" alt="Certidões">
+            <div class="card-body text-center p-4">
+                <h5 class="card-title fw-bold mb-3" style="color: var(--primary);">Certidões</h5>
+                <p class="card-text">Obtenção completa de certidões para legalização imobiliária.</p>
+                <a href="https://wa.me/5511978862935?text=Olá, desejo mais informações sobre Certidões" class="btn btn-whatsapp" target="_blank">Contrate</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Serviço 5: Retificação -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card service-card h-100">
+            <img src="{{ url_for('static', filename='img/ret.jpeg') }}" class="card-img-top" alt="Retificação">
+            <div class="card-body text-center p-4">
+                <h5 class="card-title fw-bold mb-3" style="color: var(--primary);">Retificação</h5>
+                <p class="card-text">Correção de matrícula e área para regularização definitiva.</p>
+                <a href="https://wa.me/5511978862935?text=Olá, desejo mais informações sobre Retificação" class="btn btn-whatsapp" target="_blank">Contrate</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Serviço 6: Análise Documental -->
+    <div class="col-lg-4 col-md-6">
+        <div class="card service-card h-100">
+            <img src="{{ url_for('static', filename='img/anali.jpeg') }}" class="card-img-top" alt="Análise Documental">
+            <div class="card-body text-center p-4">
+                <h5 class="card-title fw-bold mb-3" style="color: var(--primary);">Análise Documental</h5>
+                <p class="card-text">Diagnóstico completo de pendências documentais do seu imóvel.</p>
+                <a href="https://wa.me/5511978862935?text=Olá, desejo mais informações sobre Análise Documental" class="btn btn-whatsapp" target="_blank">Contrate</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <!-- Contato -->
     <section id="contato" class="contact-section py-5">

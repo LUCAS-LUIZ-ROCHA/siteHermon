@@ -153,3 +153,45 @@
     .nav-link { margin: 0 10px; font-size: 0.95rem; }
     .btn-whatsapp { padding: 12px 25px; font-size: 1rem; }
 }
+
+/* Hero Background Imagem Prédios */
+.hero {
+    min-height: 100vh;
+    height: 120vh;  /* Mais alto para imagem */
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(36,53,45,0.6) 0%, rgba(36,53,45,0.9) 100%),
+                url('../img/predios.jpg') center/cover no-repeat fixed;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);  /* Overlay escuro */
+    z-index: 2;
+}
+
+.hero .z-index-2 {
+    z-index: 3 !important;
+}
+
+/* Texto mais legível */
+.hero h1 { font-size: clamp(3rem, 8vw, 6rem) !important; line-height: 1.1; }
+.hero .lead { font-size: clamp(1.2rem, 3vw, 1.8rem) !important; }
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero { height: 100vh; }
+    .hero-bg { background-attachment: scroll; }  /* Fixed bug mobile */
+    .hero .container { padding-top: 20vh !important; padding-bottom: 10vh !important; }
+}
