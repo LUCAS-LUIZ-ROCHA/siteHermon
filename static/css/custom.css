@@ -195,3 +195,57 @@
     .hero-bg { background-attachment: scroll; }  /* Fixed bug mobile */
     .hero .container { padding-top: 20vh !important; padding-bottom: 10vh !important; }
 }
+
+/* Marquee Scrolling */
+.marquee-section {
+    background: linear-gradient(90deg, var(--primary), var(--dark));
+    overflow: hidden;
+}
+
+.marquee-container {
+    display: flex;
+    width: max-content;
+    animation: marquee 25s linear infinite;
+}
+
+.marquee-text {
+    color: #F4E574;
+    font-size: 1.1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    padding-right: 5rem;
+}
+
+.marquee-container:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Footer CTA */
+.footer-cta .btn-whatsapp {
+    font-size: 1.3rem;
+    min-width: 220px;
+}
+
+/* Copyright */
+.copyright {
+    border-top: 1px solid rgba(189,189,177,0.2);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .marquee-text { font-size: 1rem; padding-right: 3rem; }
+    @keyframes marquee { 
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-100%); }
+    }
+}
+/* Offset para seções (garantia extra) */
+#portfolio, #servicos, #contato {
+    scroll-margin-top: 90px;  /* Espaço acima da seção */
+    padding-top: 100px;       /* Padding interno */
+}

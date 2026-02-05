@@ -65,27 +65,27 @@
                     <div class="carousel-item active">
                         <div class="d-flex justify-content-center align-items-center h-100">
                             <div class="card portfolio-card w-75 text-center p-5">
-                                <img src="https://via.placeholder.com/400x250/68B346/A8D5A2?text=Projeto+Usucapião" class="card-img-top mb-4 rounded" alt="Projeto 1">
-                                <h3 class="card-title fw-bold">Condomínio Residencial</h3>
-                                <p class="card-text lead">Regularização completa de 150 lotes com usucapião coletivo.</p>
+                                <img src="{{ url_for('static', filename='img/regi.png') }}" class="card-img-top mb-4 rounded" alt="Projeto 1">
+                                <h3 class="card-title fw-bold">Imovéis residências e comerciais</h3>
+                                <p class="card-text lead">Regularização completa de imovéis residências e comerciais. (Mátriculas, Habite-se, Alvará, AVCB e Certidões).</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="d-flex justify-content-center align-items-center h-100">
                             <div class="card portfolio-card w-75 text-center p-5">
-                                <img src="https://via.placeholder.com/400x250/0E5C36/F4E574?text=Desmembramento" class="card-img-top mb-4 rounded" alt="Projeto 2">
-                                <h3 class="card-title fw-bold">Desmembramento Industrial</h3>
-                                <p class="card-text lead">Divisão de terreno industrial em 5 lotes aprovados.</p>
+                                <img src="{{ url_for('static', filename='img/us.png') }}" class="card-img-top mb-4 rounded" alt="Projeto 2">
+                                <h3 class="card-title fw-bold">Usucapião</h3>
+                                <p class="card-text lead">Experiência em diversos projetos de usucapião.</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="d-flex justify-content-center align-items-center h-100">
                             <div class="card portfolio-card w-75 text-center p-5">
-                                <img src="https://via.placeholder.com/400x250/036E1D/white?text=Topografia" class="card-img-top mb-4 rounded" alt="Projeto 3">
-                                <h3 class="card-title fw-bold">Levantamento Topográfico</h3>
-                                <p class="card-text lead">Projeto completo para regularização urbana.</p>
+                                <img src="{{ url_for('static', filename='img/lot.png') }}" class="card-img-top mb-4 rounded" alt="Projeto 3">
+                                <h3 class="card-title fw-bold">Projetos de Loteamentos</h3>
+                                <p class="card-text lead">Projetos completos para regularização de lotes, desde o estudo de viabilidade a mátriculas.</p>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,10 @@
     </section>
 
    <!-- Serviços 3x2 Grid com Imagens Locais -->
-<div class="row g-4">
+<section id="servicos" class="py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center section-title mb-5 fw-bold">Nossos Serviços</h2>
+        <div class="row g-4">
     <!-- Serviço 1: Usucapião -->
     <div class="col-lg-4 col-md-6">
         <div class="card service-card h-100">
@@ -165,7 +168,7 @@
     <!-- Serviço 6: Análise Documental -->
     <div class="col-lg-4 col-md-6">
         <div class="card service-card h-100">
-            <img src="{{ url_for('static', filename='img/anali.jpeg') }}" class="card-img-top" alt="Análise Documental">
+            <img src="{{ url_for('static', filename='img/ana.jpeg') }}" class="card-img-top" alt="Análise Documental">
             <div class="card-body text-center p-4">
                 <h5 class="card-title fw-bold mb-3" style="color: var(--primary);">Análise Documental</h5>
                 <p class="card-text">Diagnóstico completo de pendências documentais do seu imóvel.</p>
@@ -174,6 +177,7 @@
         </div>
     </div>
 </div>
+</section>
 
 
     <!-- Contato -->
@@ -186,8 +190,8 @@
                     <p class="fs-4 mb-4"><strong>(11) 97886-2935</strong></p>
                     <a href="https://wa.me/5511978862935?text=Olá, vim do site Hermon e desejo orçamento" class="btn btn-light btn-lg px-5 mb-3">Fale pelo WhatsApp</a>
                     <p class="mt-4">
-                        <a href="https://instagram.com/hermonregularizacao" class="text-white me-4 fs-4">
-                            <i class="fab fa-instagram"></i> @hermonregularizacao
+                        <a href="https://instagram.com/hermon_imob" class="text-white me-4 fs-4">
+                            <i class="fab fa-instagram"></i> @hermon_imob
                         </a>
                     </p>
                 </div>
@@ -195,29 +199,103 @@
         </div>
     </section>
 
+    <!-- Faixa Marquee Scrolling -->
+<section class="marquee-section py-3 bg-dark">
+    <div class="container-fluid px-5">
+        <div class="marquee-container">
+            <div class="marquee-text">
+                🚀 Regularize seu imóvel hoje | 📞 WhatsApp 11 97886-2935 | 💼 Loteamentos aprovados | 🏠 Usucapião garantido | 📋 Projetos | ⚡ Regularização com agilidade
+            </div>
+            <div class="marquee-text">
+                🚀 Regularize seu imóvel hoje | 📞 WhatsApp 11 97886-2935 | 💼 Loteamentos aprovados | 🏠 Usucapião garantido | 📋 Projetos | ⚡ Regularização com agilidade
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer CTA -->
+<footer class="footer-cta py-5" style="background: linear-gradient(135deg, var(--primary), var(--dark));">
+    <div class="container text-center text-white">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="display-5 fw-bold mb-4">Regularize seu imóvel AGORA!</h2>
+                <p class="lead mb-5">Não perca mais tempo com burocracia. Fale com nossos especialistas hoje mesmo.</p>
+                <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+                    <a href="https://wa.me/5511978862935?text=Olá, vim do site e quero orçamento para regularização" class="btn btn-whatsapp btn-lg px-5" target="_blank">
+                        <i class="fab fa-whatsapp me-2"></i>Orçamento WhatsApp
+                    </a>
+                    <a href="#servicos" class="btn btn-outline-light btn-lg px-5">
+                        Ver Serviços
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Copyright -->
+<div class="copyright py-3 text-center" style="background: var(--dark); color: #BDBDB1; font-size: 0.9rem;">
+    <div class="container">
+        <p>&copy; 2026 Hermon Regularização Imobiliária. Todos os direitos reservados. | Desenvolvido por <strong>Lucas Luiz Rocha</strong></p>
+    </div>
+</div>
+
+
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
-        });
-
-        // Smooth scroll + active nav
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                // Remove active de todos, adiciona no clicado
-                document.queryAll('.nav-link').forEach(l => l.classList.remove('active'));
-                this.classList.add('active');
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// DEBUG: Testa IDs carregados
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM carregado. IDs:', {
+        home: !!document.querySelector('#home'),
+        portfolio: !!document.querySelector('#portfolio'),
+        servicos: !!document.querySelector('#servicos'),
+        contato: !!document.querySelector('#contato')
+    });
+    
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('scrolled', window.scrollY > 100);
+    });
+    
+    // SMOOTH SCROLL FIX - Função robusta
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const href = this.getAttribute('href');
+            console.log('Clicou em:', href); // DEBUG
+            
+            const target = document.querySelector(href);
+            if (!target) {
+                console.error('Target não encontrado:', href);
+                return;
+            }
+            
+            console.log('Target encontrado:', target); // DEBUG
+            
+            const navbarHeight = document.querySelector('.navbar').offsetHeight + 20;
+            const targetPosition = target.offsetTop - navbarHeight;
+            
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
             });
+            
+            // Active nav
+            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+            this.classList.add('active');
         });
-    </script>
+    });
+});
+</script>
+
+
 </body>
 </html>
